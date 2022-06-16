@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display:flex;
+    background-color: #7fffd4;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;  
+}
