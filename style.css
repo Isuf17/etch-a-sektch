@@ -1,18 +1,24 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+}
+
+.title {
+    color: red;
+    font-size: 48px;
 }
 
 .container {
     display:flex;
-    background-color: #7fffd4;
     flex-wrap: wrap;
     width: 960px;
-    height: 960px;  
+    height: 960px;
+    background-color: blanchedalmond;  
 }

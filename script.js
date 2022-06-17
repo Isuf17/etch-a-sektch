@@ -11,8 +11,9 @@ function createGrid (size) {
         let grid_square = document.createElement('div');
         grid_square.classList.add('grid-sqaure');
         grid_square.style.border = 'solid-black';
-        grid_square.style.height = 960/size + "px"
-        grid_square.style.width = 960/size + "px"
+        grid_square.style.height = 960/size + "px";
+        grid_square.style.width = 960/size + "px";
+        grid_square.style.backgroundColor= "blanchedalmond";
         container.appendChild(grid_square);
     }
     return
@@ -25,3 +26,9 @@ if (typeof(size) == undefined) {
 } else {
     createGrid(size);
 }
+
+window.addEventListener('mouseover', function(e) {
+    if (e.target.style.backgroundColor == "blanchedalmond") {
+        e.target.style.backgroundColor = "white";
+    } 
+})
